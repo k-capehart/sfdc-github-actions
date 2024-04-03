@@ -22,7 +22,7 @@ jobs:
       - name: 'Authenticate using SFDX_AUTH_URL'
         shell: bash
         run: | 
-          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -u -s
+          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u -
 
       - name: 'Validate'
         run: |
